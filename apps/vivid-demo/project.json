@@ -1,0 +1,70 @@
+{
+  "projectType": "application",
+  "root": "apps/vivid-demo",
+  "sourceRoot": "apps/vivid-demo/src",
+  "tags": [],
+  "targets": {
+    "build": {
+      "executor": "@nrwl/web:webpack",
+      "outputs": ["{options.outputPath}"],
+      "defaultConfiguration": "production",
+      "options": {
+        "outputPath": "dist/apps/vivid-demo",
+        "compiler": "babel",
+        "index": "apps/vivid-demo/src/index.html",
+        "baseHref": "/",
+        "main": "apps/vivid-demo/src/main.ts",
+        "polyfills": "apps/vivid-demo/src/polyfills.ts",
+        "tsConfig": "apps/vivid-demo/tsconfig.app.json",
+        "assets": [
+          "apps/vivid-demo/src/favicon.ico",
+          "apps/vivid-demo/src/assets"
+        ],
+        "styles": ["apps/vivid-demo/src/styles.scss"],
+        "scripts": []
+      },
+      "configurations": {
+        "production": {
+          "fileReplacements": [
+            {
+              "replace": "apps/vivid-demo/src/environments/environment.ts",
+              "with": "apps/vivid-demo/src/environments/environment.prod.ts"
+            }
+          ],
+          "optimization": true,
+          "outputHashing": "all",
+          "sourceMap": false,
+          "namedChunks": false,
+          "extractLicenses": true,
+          "vendorChunk": false
+        }
+      }
+    },
+    "serve": {
+      "executor": "@nrwl/web:dev-server",
+      "options": {
+        "buildTarget": "vivid-demo:build"
+      },
+      "configurations": {
+        "production": {
+          "buildTarget": "vivid-demo:build:production"
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["apps/vivid-demo/**/*.ts"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/apps/vivid-demo"],
+      "options": {
+        "jestConfig": "apps/vivid-demo/jest.config.js",
+        "passWithNoTests": true
+      }
+    }
+  }
+}
