@@ -5,7 +5,8 @@
   "scripts": {
     "start": "nx serve",
     "build": "nx build",
-    "test": "nx test"
+    "test": "nx test",
+    "nx": "nx"
   },
   "private": true,
   "dependencies": {
@@ -14,11 +15,14 @@
     "tslib": "^2.0.0"
   },
   "devDependencies": {
+    "@nrwl/angular": "^13.4.3",
     "@nrwl/cli": "13.4.1",
     "@nrwl/cypress": "13.4.1",
+    "@nrwl/devkit": "13.4.1",
     "@nrwl/eslint-plugin-nx": "13.4.1",
     "@nrwl/jest": "13.4.1",
     "@nrwl/linter": "13.4.1",
+    "@nrwl/node": "^13.4.1",
     "@nrwl/tao": "13.4.1",
     "@nrwl/web": "13.4.1",
     "@nrwl/workspace": "13.4.1",
