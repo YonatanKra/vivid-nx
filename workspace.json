@@ -1,8 +1,9 @@
 {
   "version": 2,
   "projects": {
-    "vivid": "libs/vivid",
-    "vivid-demo": "apps/vivid-demo",
-    "vivid-demo-e2e": "apps/vivid-demo-e2e"
+    "components": "libs/components",
+    "docs": "apps/docs",
+    "themes": "libs/themes",
+    "vivid": "libs/vivid"
   }
 }

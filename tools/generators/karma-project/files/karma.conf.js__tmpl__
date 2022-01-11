@@ -1,0 +1,27 @@
+// Karma configuration file, see link for more information
+// https://karma-runner.github.io/1.0/config/configuration-file.html
+
+const { join } = require('path');
+const rollupConfig = require('./rollup.config.spec');
+const getBaseKarmaConfig = require('<%= offsetFromRoot %>karma.conf');
+
+module.exports = function(config) {
+  const baseConfig = getBaseKarmaConfig();
+  config.set({
+    ...baseConfig,
+    files: [
+        {
+            pattern: 'src/**/*.spec.ts',
+            watched: false
+        }
+    ],
+    preprocessors: {
+        'src/**/*.spec.ts': ["rollup"],
+    },
+    coverageIstanbulReporter: {
+      ...baseConfig.coverageIstanbulReporter,
+      dir: join(__dirname, '<%= offsetFromRoot %>coverage/<%= projectRoot %>')
+    },
+    rollupPreprocessor: rollupConfig
+  });
+};

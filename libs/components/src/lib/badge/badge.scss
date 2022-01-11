@@ -1,0 +1,70 @@
+@use '../common/sass/mixins/connotation/config' with (
+	$subset: primary cta success alert warning info,
+	$shades: soft contrast,
+	$default: primary,
+);
+@use '../common/sass/mixins/connotation' as connotation;
+
+.control {
+	@include connotation.connotation;
+	display: inline-flex;
+	box-sizing: border-box;
+	align-items: center;
+	border: 1px solid var(--appearance-color-outline);
+	background-color: var(--appearance-color-fill);
+	color: var(--appearance-color-text);
+	column-gap: 8px;
+	font: 600 ultra-condensed 12px / 16px SpeziaWebVariable;
+	letter-spacing: 0;
+	text-decoration: none;
+	text-transform: none;
+	vertical-align: middle;
+}
+
+/* Size */
+
+.control:not(.size-small):not(.size-large) {
+	block-size: 24px;
+	padding-inline: 10px;
+}
+
+.control.size-small {
+	block-size: 20px;
+	padding-inline: 8px;
+}
+
+.control.size-large {
+	block-size: 28px;
+	padding-inline: 12px;
+}
+
+/* Appearance */
+
+.control:not(.appearance-outlined):not(.appearance-soft) {
+	--appearance-color-fill: var(--connotation);
+	--appearance-color-text: var(--on-connotation);
+}
+.control.appearance-outlined {
+	--appearance-color-fill: transparent;
+	--appearance-color-outline: var(--connotation);
+	--appearance-color-text: var(--connotation-contrast);
+}
+.control.appearance-soft {
+	--appearance-color-fill: var(--connotation-soft);
+	--appearance-color-text: var(--connotation-contrast);
+}
+
+/* Shape */
+
+.control:not(.shape-pill) {
+	border-radius: 4px;
+}
+.control.shape-pill {
+	border-radius: 14px;
+}
+
+/* Icon */
+
+.control.icon-trailing .affix {
+	order: 1;
+}

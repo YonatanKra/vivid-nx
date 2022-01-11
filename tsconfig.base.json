@@ -15,7 +15,9 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@vivid-nx/vivid": ["libs/vivid/src/index.ts"]
+      "@vivid-nx/themes": ["libs/themes/src/index.ts"],
+      "@vivid-nx/vivid": ["libs/vivid/src/index.ts"],
+      "@voange/vivid": ["libs/components/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
