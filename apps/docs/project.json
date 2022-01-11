@@ -19,7 +19,7 @@
       "options": {
         "commands": [
           {
-            "command": "yarn eleventy --config=./apps/docs/.eleventy.js --serve"
+            "command": "yarn nx build components && yarn nx build themes && yarn eleventy --config=./apps/docs/.eleventy.js --serve"
           }
         ]
       }

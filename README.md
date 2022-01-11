@@ -1,94 +1,76 @@
+<div align="center">
+  <a href="https://github.com/vonage/vivid-3">
+    <img src="/vivid-logo.svg" style="" alt="Vivid Logo" width="120">
+  </a>
+  <h1 align="center">Welcome to Vivid</h1>
+
+[![Contributors][contributors-shield]][contributors-url]
+[![Forks][forks-shield]][forks-url]
+[![Stargazers][stars-shield]][stars-url]
+[![Issues][issues-shield]][issues-url]
+[![Apache 2.0 License][license-shield]][license-url]
+
+  <p align="center">
+    Vonage's design system platform targeted to provide incorporated, battery-charged web components.
+  </p>
+  <a href="https://vonage.github.io/vivid-3"><strong>Explore the docs »</strong></a>
+  <br>
+  <a href="https://github.com/Vonage/vivid-3/issues/new?assignees=&labels=&template=bug_report.md&title=">Report Bug</a>
+  ·
+  <a href="https://github.com/Vonage/vivid-3/issues/new?assignees=&labels=&template=feature_request.md&title=">Request Feature</a>
+</div>
+
+<br>
+<br>
+
+> Vivid philosophy favors **lock-down** over **white labeling** strategy, utilizing high-level [design tokens](docs/design-tokens.md) to customize UI systematically rather than permuting components directly (to a balanced degree). This guideline help keep integration processes **ergonomic** and the UI **consistent**.
 
 
-# VividNx
-
-This project was generated using [Nx](https://nx.dev).
-
-<p style="text-align: center;"><img src="https://raw.githubusercontent.com/nrwl/nx/master/images/nx-logo.png" width="450"></p>
-
-🔎 **Smart, Fast and Extensible Build System**
-
-## Adding capabilities to your workspace
-
-Nx supports many plugins which add capabilities for developing different types of applications and different tools.
-
-These capabilities include generating applications, libraries, etc as well as the devtools to test, and build projects as well.
-
-Below are our core plugins:
-
-- [React](https://reactjs.org)
-  - `npm install --save-dev @nrwl/react`
-- Web (no framework frontends)
-  - `npm install --save-dev @nrwl/web`
-- [Angular](https://angular.io)
-  - `npm install --save-dev @nrwl/angular`
-- [Nest](https://nestjs.com)
-  - `npm install --save-dev @nrwl/nest`
-- [Express](https://expressjs.com)
-  - `npm install --save-dev @nrwl/express`
-- [Node](https://nodejs.org)
-  - `npm install --save-dev @nrwl/node`
-
-There are also many [community plugins](https://nx.dev/community) you could add.
-
-## Generate an application
-
-Run `nx g @nrwl/react:app my-app` to generate an application.
-
-> You can use any of the plugins above to generate applications as well.
-
-When using Nx, you can create multiple applications and libraries in the same workspace.
-
-## Generate a library
-
-Run `nx g @nrwl/react:lib my-lib` to generate a library.
-
-> You can also use any of the plugins above to generate libraries as well.
-
-Libraries are shareable across libraries and applications. They can be imported from `@vivid-nx/mylib`.
-
-## Development server
-
-Run `nx serve my-app` for a dev server. Navigate to http://localhost:4200/. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `nx g @nrwl/react:component my-component --project=my-app` to generate a new component.
-
-## Build
-
-Run `nx build my-app` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `nx test my-app` to execute the unit tests via [Jest](https://jestjs.io).
-
-Run `nx affected:test` to execute the unit tests affected by a change.
-
-## Running end-to-end tests
-
-Run `ng e2e my-app` to execute the end-to-end tests via [Cypress](https://www.cypress.io).
-
-Run `nx affected:e2e` to execute the end-to-end tests affected by a change.
-
-## Understand your workspace
-
-Run `nx dep-graph` to see a diagram of the dependencies of your projects.
-
-## Further help
-
-Visit the [Nx Documentation](https://nx.dev) to learn more.
+<br>
 
 
+## Roadmap
 
-## ☁ Nx Cloud
+Follow our API planning on the [Vivid project components' view](https://github.com/orgs/Vonage/projects/3/views/13)
 
-### Distributed Computation Caching & Distributed Task Execution
+We publish a canary release on every successful merge to main, so you never need to wait for a new stable version to make use of any updates.
 
-<p style="text-align: center;"><img src="https://raw.githubusercontent.com/nrwl/nx/master/images/nx-cloud-card.png"></p>
+See the [open issues](https://github.com/vonage/vivid-3/issues) for a full list of proposed features (and known issues).
 
-Nx Cloud pairs with Nx in order to enable you to build and test code more rapidly, by up to 10 times. Even teams that are new to Nx can connect to Nx Cloud and start saving time instantly.
+<br>
 
-Teams using Nx gain the advantage of building full-stack applications with their preferred framework alongside Nx’s advanced code generation and project dependency graph, plus a unified experience for both frontend and backend developers.
+## 🤝 Contributing
 
-Visit [Nx Cloud](https://nx.app/) to learn more.
+Contributions, issues and feature requests are welcome!
+Feel free to check [issues page](https://github.com/Vonage/vivid-3/issues). You can also take a look at the [contributing guide](https://github.com/Vonage/vivid-3/issues).
+
+<br>
+
+## Show your support
+
+Give a ⭐️ if this project helped you!
+
+<br>
+
+## 📝 License
+
+This project is [Apache 2.0][license-url] licensed.
+
+<br>
+
+<hr>
+
+### Built With [Typescript](https://www.typescriptlang.org), [Lit](https://lit.dev), [Sass](https://sass-lang.com) and ❤️
+
+<!-- MARKDOWN LINKS & IMAGES -->
+<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+[contributors-shield]: https://img.shields.io/github/contributors/vonage/vivid-3.svg?style=for-the-badge
+[contributors-url]: https://github.com/vonage/vivid-3/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/vonage/vivid-3.svg?style=for-the-badge
+[forks-url]: https://github.com/vonage/vivid-3/network/members
+[stars-shield]: https://img.shields.io/github/stars/vonage/vivid-3.svg?style=for-the-badge
+[stars-url]: https://github.com/vonage/vivid-3/stargazers
+[issues-shield]: https://img.shields.io/github/issues/vonage/vivid-3.svg?style=for-the-badge
+[issues-url]: https://github.com/vonage/vivid-3/issues
+[license-shield]: https://img.shields.io/github/license/vonage/vivid-3.svg?style=for-the-badge
+[license-url]: LICENSE.md
